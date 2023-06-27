@@ -42,6 +42,11 @@ header, .navbar {
    text-decoration: none;
 }
 
+#navbar-links a:hover {
+    color: #888787;
+    font-weight: bold;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem .8rem;
 }
@@ -57,7 +62,7 @@ header, .navbar {
     list-style: none;
 }
 
-#mainSlider .carousel-inner, #mainSlider .carousel-item, #mainSlider .carousel-image {
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
     height: 95vh;
 }
 
@@ -74,7 +79,7 @@ header, .navbar {
     color: #fff;
     font-size: 22px;
     font-weight: 300;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .main-btn {
@@ -178,6 +183,10 @@ header, .navbar {
 
 /* Dados */
 
+.circle-box div {
+    padding: 0 40px;
+}
+
 .progressbar-text {
     font-weight: bold;
     font-size: 32px;
@@ -187,7 +196,7 @@ header, .navbar {
     color: #fff; 
     text-align: center;
     font-size: 26px;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 
@@ -204,7 +213,8 @@ header, .navbar {
     height: 500px;
 }
 
-#apply-area .container-fluid, #apply-area .row {
+#apply-area .container-fluid, 
+#apply-area .row {
     height: 100%;
 }
 
@@ -223,7 +233,6 @@ header, .navbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
 }
 
 #pattern-img h4, #pattern-img p {
@@ -253,16 +262,429 @@ header, .navbar {
 }
 
 
-@media (max-width: 800px) {
+/* Portfólio */
+
+.project-box {
+    margin-top: 30px;
+}
+
+#filter-btn-box {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin-inline: 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+#portfolio-area .active, #portfolio-area .filter-btn:hover {
+    color: #fff;
+    background-color: #65daf9;
+    border-color: #65daf9;
+}
+
+
+/* Newsletter */
+
+#newsletter-area {
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+#newsletter-area p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#email-input {
+    box-shadow: none !important;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #65daf9;
+    display: inline;
+    box-sizing: border-box;
+    /* min-width: 320px;
+    max-width: 400px; */
+    width: 40%;
+    height: 40px;
+}
+
+#news-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    background-color: #65daf9;
+    border: 1px solid #65daf9;
+    color: #fff;
+    text-transform: uppercase;
+    padding-inline: 30px;
+    margin-left: -130px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+#news-btn:hover {
+    background-color: #fff;
+    color: #65daf9;
+}
+
+
+/* Call To Action */
+
+#call-area {
+    background-color: #65daf9;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#call-area .container {
+    padding: 40px 100px;
+}
+
+#call-area .row {
+    display: block;
+}
+
+#call-area p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+
+#call-btn {
+    background-color: #fff;
+    border-color: #fff;
+    color: #65daf9;
+    height: 46px;
+    min-width: 130px;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+#call-btn:hover {
+    background-color: #65daf9;
+    border-color: #fff;
+    color: #fff;
+}
+
+
+/* Rodapé */
+
+#contact-area {
+    text-align: center;
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #3ec1d5;
+}
+
+.contact-box i {
+    border: 1px solid #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;    
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-weight: bold;
+    color: #3ec1d5;
+}
+
+#msg-box p {
+    font-size: 22px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 0;
+    resize: none;
+    box-shadow: none !important;
+    border-color: #bbb;
+}
+
+#contact-form .main-btn {
+    width: 120px;
+    height: 46px;
+}
+
+#contact-form .main-btn:hover {
+    color: #65daf9;
+}
+
+/* Copy */
+
+#copy-area {
+    background-color: #f1f1f1;
+}
+
+#copy-area .container {
+    padding: 15px 0;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
+}
+
+#copy-area .container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #444;
+}
+
+#copy-area .container a:hover {
+    color: #3ec1d5;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 912px) {
+
+    /* Geral */
+    .container {
+        padding: 20px 0;
+    }
+
+    /* Slider */
+
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption {
+        left: 10%;
+        right: 10%;
+    } 
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 30px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    /* Sobre */
+    #about-area img {
+        margin-top: 100px;
+    }
+
+    /* Dados */
+    .circle-box div {
+        padding: 0 10px;
+        margin-block: 20px;
+    }
+
+    #data-area p {
+        font-size: 16px;
+    }
+
+    /* Time */
+    .card-body {
+        padding-inline: 5px;
+    }
+
+    .card-title {
+        font-size: 17px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    /* Trabalhe conosco */
+    #apply-area .apply-box {
+        padding-block: 50px;
+    }
+
+    /* Newsletter */
+    #newsletter-area p {
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    #email-input {   
+        width: 60%;
+    } 
+
+    /* Call Area */
+    #call-area {
+        margin-top: 30px;
+    }
+
+    #call-area .container {
+        padding: 0;
+    }
+
+    #call-area p, #call-area #call-btn {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 540px) {
+    
+    /* Slider */
+    #mainSlider {
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption {
+        top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p {
+        display: none;
+    }
+
+    .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+    /* Sobre */
+    .main-title {
+        font-size: 27px;
+    }
+
+    .main-title::after {
+        top: 50px;
+    }
+
+    #about-area img {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /* Dados */
+    .circle-box {
+        width: 50%;
+    }
+
+    /* Time */
+    #team-area .col-md-3 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* Trabalhe conosco */
+    #aplly-area {
+        height: auto;
+    }
+
+    #company-img {
+        display: none;
+    }
+
+    /* Filter */
+    #portfolio-area .filter-btn {
+        margin-bottom: 20px;
+    }
+
+    .project-box {
+        width: 50%;
+    }
+
+    /* Newsletter */
+    #newsletter-area .main-title {
+        font-size: 24px;
+    }
+
+    #newsletter-area p {
+        font-size: 16px;
+    }
+
+    #email-input {
+        width: 80%;
+        border-right: 0;
+    }
+
+    #news-btn {
+        margin-left: -120px;
+        padding-inline: 15px;
+    }
+
+    /* Call Area */
+    #call-area p, #call-area #call-btn {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    #call-area #call-btn {
+        margin-top: 0;
+        margin-bottom: 25px;
+        height: 44px;
+    }
+
+    /* Contatos */
+    .contact-box {
+        border: none;
+        padding-bottom: 25px;
+        margin-bottom: 0;
+    }
+
+    .contact-box i {
+        margin-top: 0;
+    }
+
+}
+
+/* @media (max-width: 800px) {
 
     #pattern-img {
-        /* Por algum motivo, a imagem colocada pelo parallax está sumindo em tamanhos de telas menores, então vou colocar a mesma imagem como fundo */
+        /* Por algum motivo, a imagem colocada pelo parallax está sumindo em tamanhos de telas menores, então vou colocar a mesma imagem como fundo. 
         background-image: url('../images/pattern.png');
         background-size: cover;
+        height: 100%;
     }
 
     #mainSlider .carousel-inner, #mainSlider .carousel-item, #mainSlider .carousel-image {
         height: 90vh;
     }
 
-}
+    #portfolio-area {
+        margin-top: 500px;
+    }
+
+    #portfolio-area .filter-btn {
+        margin-inline: 3px;
+    }
+
+    #news-btn {
+        padding-inline: 15px;
+    }
+
+    #newsletter-area .main-title::after {
+        top: 108px;
+    }
+
+} */
